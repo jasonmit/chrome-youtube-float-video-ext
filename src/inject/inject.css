@@ -1,0 +1,10 @@
+#player #player-api.floating {
+  border: 1px solid #d5d5d5;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  margin-right: 0;
+  margin-left: 0;
+  zoom: 50%;
+  left: auto;
+}

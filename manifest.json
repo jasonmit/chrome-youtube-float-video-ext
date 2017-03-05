@@ -1,0 +1,27 @@
+{
+  "name": "Youtube video floater",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "\"Floats\" a youtube video when you scroll past it in the document so you can continue viewing it.",
+  "homepage_url": "http://github.com/jasonmit/chrome-video-floater",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://youtube.com/*"
+      ],
+      "css": [
+        "src/inject/inject.css"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://youtube.com/*"
+      ],
+      "js": [
+        "src/inject/inject.js"
+      ]
+    }
+  ]
+}
