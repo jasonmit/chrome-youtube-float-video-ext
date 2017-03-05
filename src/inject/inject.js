@@ -14,7 +14,7 @@ function aggregateOffsetTop(element) {
 
 chrome.extension.sendMessage({}, function(response) {
   const readyStateCheckInterval = setInterval(function() {
-    if (document.readyState === "complete") {
+    if (document.readyState === 'complete') {
       clearInterval(readyStateCheckInterval);
 
       /* assuming it will never change in the DOM */
@@ -35,11 +35,11 @@ chrome.extension.sendMessage({}, function(response) {
         timer = setTimeout(function() {
           if (window.scrollY > breakpoint) {
             if (!isFloating) {
-              classList.add('floating');
+              classList.add('__floating');
               isFloating = true;
             }
           } else if (isFloating) {
-            classList.remove('floating');
+            classList.remove('__floating');
             isFloating = false;
           }
         }, 100);

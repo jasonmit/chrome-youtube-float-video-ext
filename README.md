@@ -1,6 +1,6 @@
 # chrome-youtube-float-video-ext
 
-Automatically floats the youtube's video player when it's no longer in view.
+Automatically floats the youtube video player when no longer in view.
 
 ## Build
 
@@ -8,7 +8,7 @@ Automatically floats the youtube's video player when it's no longer in view.
 make build
 ```
 
-## Adding to Chrome
+## Installing
 
 I haven't published it, so you'll need to [load the unpack extension](https://developer.chrome.com/extensions/getstarted#unpacked).
 
